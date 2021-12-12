@@ -1,3 +1,4 @@
+#Strings and methods
 name = "samantha millar"
 print(name.title())
 print(name.upper())
@@ -24,6 +25,7 @@ print(favourite_language)
 
 favourite_language = favourite_language.rstrip()
 
+#Numbers
 print(5+3)
 print(2*4)
 print(10-2)
@@ -31,3 +33,4 @@ print(8/1)
 
 favourite_number = 1
 print(f"{favourite_number} is the goal")
+
