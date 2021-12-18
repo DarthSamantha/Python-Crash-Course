@@ -24,3 +24,6 @@ print(food)
 popped_food = food.pop()
 print(food)
 print(popped_food)
+
+food.remove('cheese')
+print(food)
