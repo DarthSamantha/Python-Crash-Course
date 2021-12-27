@@ -26,4 +26,28 @@ print(food)
 print(popped_food)
 
 food.remove('cheese')
-print(food)
+print(food) 
+# remove only deletes the first value of the word in the list
+
+cars =['bmw', 'mazda', 'audi', 'tesla']
+cars.sort()
+print(cars)
+cars.sort(reverse=True)
+print(cars)
+
+#sort a list temporarily with sorted()
+
+cars =['bmw', 'mazda', 'audi', 'tesla'] 
+print("Here is the original list:")
+print(cars)
+
+print("\nHere is the sorted list:")
+print(sorted(cars))
+
+print("\nHere is the original list again:")
+print(cars)
+
+cars.reverse()
+print(cars)
+
+print(len(cars))
