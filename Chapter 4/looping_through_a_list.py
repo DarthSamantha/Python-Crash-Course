@@ -6,8 +6,16 @@ for x in Cities:
 print("for loop ended\n")
 
 Pizza = ['Hawaiian', 'Meatlovers', 'Pepperoni']
+friend_pizzas = Pizza[:]
+Pizza.append('Cheese')
+friend_pizzas.append('Chocolate')
+print("My favourite pizzas are:")
 for pizza in Pizza:
-    print(f"I like {pizza} Pizza")
+    print(pizza)
+
+print("\nMy friends favourite pizzas are:")
+for pizza in friend_pizzas:
+    print(pizza)
 
 print("\nPizza is amazing\n")
 
@@ -16,6 +24,17 @@ for Animal in Animals:
     print(f"A {Animal} would make a great pet")
 
 print("\nAny of these would make a great pet\n")
+print(f"The first three items in the list are:")
+for Animal in Animals[0:3]:
+    print(Animal)
+print(f"\nThree items from the middle of the list are:")
+for Animal in Animals[1:4]:
+    print(Animal)
+print(f"\nThree items from the end of the list are:")
+for Animal in Animals[1:4]:
+    print(Animal)
+print("\n")
+
 
 for value in range(1, 5):
     print(value)
