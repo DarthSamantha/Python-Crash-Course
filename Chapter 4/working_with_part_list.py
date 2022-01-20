@@ -39,3 +39,6 @@ print("\nThe foods served at our buffet are:")
 for food in buffet_menu:
     print(food)
 
+suv = 'Range Rover'
+suv.lower() == suv
+
