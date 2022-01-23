@@ -2,12 +2,14 @@ alien_0 = {'colour': 'purple', 'points': 5}
 print(alien_0['colour'])
 print(alien_0['points'])
 
-new_points = alien_0['points']
-print(f"Congrats you just earned {new_points} points!")
-
 alien_0['x_position'] = 0
 alien_0['y_postion'] = 25
-print(alien_0) 
+
+for key, value in alien_0.items():
+    print(f"Key: {key} Value: {value}")
+
+new_points = alien_0['points']
+print(f"Congrats you just earned {new_points} points!")
 
 alien_0['colour'] = 'black'
 print(f"The alien is now the colour {alien_0['colour']}")
@@ -53,11 +55,54 @@ favourite_foods = {
 family = ['Rachel', 'Debbie', 'David']
 
 for name in favourite_foods:
-    print(f"Hi, {name}")
+    print(f"Hi, {name}.")
     
     if name in family:
         food = favourite_foods[name].title()
         print(f"\t{name}, I see you love {food}")
+
+for name in sorted(family):
+    print(f"{name} thank you for taking the poll")
+
+for food in favourite_foods.values():
+    print(f"Top food condendant is: {food}")
+
+# set() method will remove duplicate values, so only print unique
+# build a set directly using braces (without key value pairs)
+
+food = {'chips', 'chocolate', 'carrots', 'chips'}
+print(food)
+
+beaches = {'Raglan': 'Waikato', 'Waihi': 'Bay of Plenty', 'Mission Bay': 'Auckland'}
+for key, value in beaches.items():
+    print(f"{key} is located in {value}.")
+
+for key in beaches:
+    print(key)
+
+favourite_languages = {
+    'sam': 'java',
+    'ben': 'go',
+    'rachel': 'c'
+}
+
+names_for_poll = ['sam', 'ben', 'debbie']
+
+for name in favourite_languages:
+    if name in names_for_poll:
+        print(f"Thank you {name.title()} for taking the poll!")
+    else:
+        print(f"Hi {name.title()}, please take the poll")
+
+for name in names_for_poll:
+    if name in favourite_languages:
+        print(f"Thank you {name.title()} for taking the poll!")
+    else:
+        print(f"Hi {name.title()}, please take the poll") 
+
+
+
+
 
 
 
